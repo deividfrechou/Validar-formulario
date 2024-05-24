@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Validar formulario</title>
+
+</head>
+<body bgcolor="silver">
+<form>
+  
+    Texto:<input type="text" required="required" name="text" pattern="[a-z]+$" title="Não digite numeros" />
+    <label for="text">apenas letras</label>
+    <br />
+    
+    Numeros:<input type="text" required="required" name="numbers" pattern="[0-9]+$"  title="digite somente numeros"  />
+    <label for="numbers">apenas numeros</label>
+    <br />
+        
+    Data:<input type="date" required="required" maxlength="10" name="date" pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" min="2012-01-01" max="2014-02-18" />
+    <label for="date">somente data</label>    
+    <br />
+    
+    Hora:<input type="time" required="required" maxlength="8" name="hour" pattern="[0-9]{2}:[0-9]{2} [0-9]{2}$" />
+    <label for="hour">somente hora</label>
+    <br />
+    
+    Telefone:<input type="tel" required="required" maxlength="15" name="phone" pattern="\([0-9]{2}\) [0-9]{4}\-[0-9]{4}$" />
+    <label for="phone">telefone</label>
+    <br />
+    
+    email:<input type="email" required="required" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+    <label for="email">Seu email</label>
+    <br />
+    
+    Cep:<input type="text" required="required" name="cep" pattern="[0-9]{5}-[0-9]{3}$" />
+    <label for="cep">Seu cep</label>
+     <br />
+     
+    <input type="submit" value="Confirmar" />
+
+</form>
+</body>
+</html>
+
